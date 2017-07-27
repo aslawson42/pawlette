@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "babel-cli": "^6.24.1"
+  },
+  "name": "pawlette",
+  "description": "A prototype for an art gallery website.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aslawson42/pawlette.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aslawson42/pawlette/issues"
+  },
+  "homepage": "https://github.com/aslawson42/pawlette#readme"
+}
