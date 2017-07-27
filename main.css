@@ -1,0 +1,9 @@
+.mdc-toolbar {
+  background-color: #34515e;
+}
+.mdc-toolbar img {
+  max-width: 64px;
+}
+.mdc-toolbar section {
+  font-family: Roboto;
+}

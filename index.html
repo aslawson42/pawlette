@@ -7,11 +7,25 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="node_modules/material-components-web/dist/material-components-web.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
   <script src="https://unpkg.com/vue"></script>
 </head>
 
 <body>
-  <p>Hello world!</p>
+  <header class="mdc-toolbar mdc-toolbar--fixed">
+    <div class="mdc-toolbar__row">
+      <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+        <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
+        <img src="img/Pawlette Logo - Gray Filled.svg" />
+        <span class="mdc-toolbar__title">Home</span>
+      </section>
+      <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">
+        <a class="material-icons align-icons mdc-toolbar__icon" aria-label="Search" alt="Search">search</a>
+        <a class="material-icons align-icons mdc-toolbar__icon" aria-label="Notifications" alt="Notifications">notifications_none</a>
+        <a class="material-icons align-icons mdc-toolbar__icon" aria-label="Messages" alt="Messages">mail_outline</a>
+      </section>
+    </div>
+  </header>
   <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
   <script>
     mdc.autoInit()
