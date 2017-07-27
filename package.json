@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/aslawson42/pawlette/issues"
   },
-  "homepage": "https://github.com/aslawson42/pawlette#readme"
+  "homepage": "https://github.com/aslawson42/pawlette#readme",
+  "dependencies": {
+    "material-components-web": "^0.16.0"
+  }
 }
