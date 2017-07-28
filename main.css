@@ -1,13 +1,12 @@
-nav {
+body {
+  font-family: Roboto, Helvetica, san-serif;
+  background-color: #b0bec5;
+}
+
+.mdc-toolbar {
   background-color: #34515e;
 }
-nav .nav-wrapper .brand-logo i {
-  margin-left: 16px;
-}
-nav .nav-wrapper a span {
-  font-size: 20px;
-}
-nav .nav-wrapper img {
+
+header div section img {
   max-width: 64px;
-  margin: auto;
 }
