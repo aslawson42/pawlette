@@ -11,10 +11,8 @@ $night-secondary-color: #607d8b;
 $night-secondary-color-light: #8eacbb;
 $night-secondary-color-dark: #34515e;
 $accent-green: #009688;
-$accent-orange: ;
 $accent-red: #CC284F;
 $night-accent-green: #80CBC4;
-$night-accent-orange: ;
 $night-accent-red: #C95D77;
 
 body {
@@ -47,8 +45,9 @@ header nav img {
   ul a img {
     max-width: 24px;
   }
-  .list-group .list-group-item:hover {
-    background-color: $primary-color-light;
+  .list-group {
+    .list-group-item:hover, .active {
+      background-color: $primary-color-light; }
   }
   header {
     background-color: $primary-color;

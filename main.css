@@ -2,10 +2,17 @@ body {
   font-family: Roboto, Helvetica, san-serif;
   background-color: #b0bec5; }
 
-  .material-icons .md-18 { font-size: 18px; }
-  .material-icons .md-24 { font-size: 24px; }
-  .material-icons .md-36 { font-size: 36px; }
-  .material-icons .md-48 { font-size: 48px; }
+.material-icons .md-18 {
+  font-size: 18px; }
+
+.material-icons .md-24 {
+  font-size: 24px; }
+
+.material-icons .md-36 {
+  font-size: 36px; }
+
+.material-icons .md-48 {
+  font-size: 48px; }
 
 .navbar {
   background-color: #34515e; }
@@ -22,7 +29,7 @@ header nav img {
   color: white; }
   .bmd-layout-drawer ul a img {
     max-width: 24px; }
-  .bmd-layout-drawer .list-group .list-group-item:hover {
+  .bmd-layout-drawer .list-group .list-group-item:hover, .bmd-layout-drawer .list-group .active {
     background-color: #8eacbb; }
   .bmd-layout-drawer header {
     background-color: #607d8b;
@@ -31,9 +38,9 @@ header nav img {
       font-size: 48px; }
     .bmd-layout-drawer header .followers {
       font-size: 12px; }
-    .bmd-layout-drawer header .followers .follower-number {
-      font-size: 14px;
-      font-weight: 500; }
+      .bmd-layout-drawer header .followers .follower-number {
+        font-size: 14px;
+        font-weight: 500; }
     .bmd-layout-drawer header .account {
       display: flex;
       position: relative;
