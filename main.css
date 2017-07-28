@@ -12,4 +12,15 @@ body {
 header nav img {
   max-width: 64px; }
 
+.bmd-layout-drawer {
+  background-color: #808e95;
+  color: white; }
+
+.bmd-layout-drawer ul a img {
+      max-width: 24px; }
+
+.bmd-layout-drawer .list-group .list-group-item:hover {
+  background-color: #8eacbb;
+}
+
 /*# sourceMappingURL=main.css.map */

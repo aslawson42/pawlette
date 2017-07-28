@@ -29,3 +29,14 @@ body {
 header nav img {
   max-width: 64px;
 }
+
+.bmd-layout-drawer {
+  background-color: $secondary-color-dark;
+  color: white;
+  ul a img {
+    max-width: 24px;
+  }
+  .list-group .list-group-item:hover {
+    background-color: $primary-color-light;
+  }
+}
