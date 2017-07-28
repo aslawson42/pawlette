@@ -2,18 +2,6 @@ body {
   font-family: Roboto, Helvetica, san-serif;
   background-color: #b0bec5; }
 
-.material-icons .md-18 {
-  font-size: 18px; }
-
-.material-icons .md-24 {
-  font-size: 24px; }
-
-.material-icons .md-36 {
-  font-size: 36px; }
-
-.material-icons .md-48 {
-  font-size: 48px; }
-
 .navbar {
   background-color: #34515e; }
   .navbar i {
@@ -49,5 +37,13 @@ header nav img {
       width: 100%; }
       .bmd-layout-drawer header .account .dropdown {
         margin-left: auto; }
+  .bmd-layout-drawer .btn-group {
+    margin-left: auto;
+  }
+  .bmd-layout-drawer .btn-group .btn {
+    color: white; }
+  .bmd-layout-drawer .btn-group .active {
+    background-color: #8eacbb;
+    color: white; }
 
 /*# sourceMappingURL=main.css.map */
