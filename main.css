@@ -1,12 +1,15 @@
 body {
   font-family: Roboto, Helvetica, san-serif;
-  background-color: #b0bec5;
-}
+  background-color: #b0bec5; }
 
-.mdc-toolbar {
-  background-color: #34515e;
-}
+.navbar {
+  background-color: #34515e; }
+  .navbar i {
+    color: white; }
+  .navbar .navbar-brand {
+    color: white; }
 
-header div section img {
-  max-width: 64px;
-}
+header nav img {
+  max-width: 64px; }
+
+/*# sourceMappingURL=main.css.map */

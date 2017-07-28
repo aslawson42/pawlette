@@ -1,41 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Pawlette</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="node_modules/material-components-web/dist/material-components-web.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/FezVrasta/bootstrap-material-design/dist/dist/bootstrap-material-design.min.css">
   <link href="main.css" rel="stylesheet">
-  <script src="https://unpkg.com/vue"></script>
 </head>
 
 <body>
-  <header class="mdc-toolbar mdc-toolbar--fixed">
-    <div class="mdc-toolbar__row">
-      <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-        <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
-        <span class="mdc-toolbar__title">Pawlette</span>
-      </section>
-      <section class="mdc-toolbar__section">
+  <div class="bmd-layout-container bmd-drawer-f-l">
+    <header class="bmd-layout-header">
+      <nav class="navbar navbar-fixed-top navbar-light bg-faded">
+        <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s1">
+          <span class="sr-only">Toggle drawer</span>
+          <i class="material-icons">menu</i>
+        </button>
+        <a class="navbar-brand" href="#">Pawlette</a>
         <img src="img/Pawlette Logo - Gray Filled.svg" />
-      </section>
-      <section class="mdc-toolbar__section mdc-toolbar__section--align-end">
-        <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Search" alt="Search">search</a>
-        <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Notifications" alt="Notifications">notifications_none</a>
-        <a href="#" class="material-icons mdc-toolbar__icon" aria-label="Messages" alt="Messages">mail_outline</a>
-      </section>
+        <div class="nav navbar-nav pull-xs-right">
+          <a class="nav-item nav-link" href="#"><i class="material-icons">search</i></a>
+          <a class="nav-item nav-link" href="#"><i class="material-icons">notifications_none</i></a>
+          <a class="nav-item nav-link" href="#"><i class="material-icons">mail_outline</i></a>
+        </div>
+      </nav>
+    </header>
+    <div id="dw-s1" class="bmd-layout-drawer bg-faded">
+      <header>
+        <a class="navbar-brand">Title</a>
+      </header>
+      <ul class="list-group">
+        <a class="list-group-item">Link 1</a>
+        <a class="list-group-item">Link 2</a>
+        <a class="list-group-item">Link 3</a>
+      </ul>
     </div>
-  </header>
-  <main class="mdc-toolbar-fixed-adjust">
-    <p class="demo-paragraph">
-      A demo paragraph here.
-    </p>
-  </main>
-  <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
+    <main class="bmd-layout-content">
+      <div class="container">
+        <p>Main content</p>
+      </div>
+    </main>
+  </div>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+  <script src="https://cdn.rawgit.com/HubSpot/tether/v1.3.4/dist/js/tether.min.js"></script>
+  <script src="https://cdn.rawgit.com/FezVrasta/bootstrap-material-design/dist/dist/bootstrap-material-design.iife.min.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="https://maxcdn.bootstrapcdn.com/js/ie10-viewport-bug-workaround.js"></script>
   <script>
-    mdc.autoInit()
+    $('body').bootstrapMaterialDesign();
   </script>
 </body>
 

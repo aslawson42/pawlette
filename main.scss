@@ -10,3 +10,22 @@ $night-primary-color-dark: #102027;
 $night-secondary-color: #607d8b;
 $night-secondary-color-light: #8eacbb;
 $night-secondary-color-dark: #34515e;
+
+body {
+  font-family: Roboto, Helvetica, san-serif;
+  background-color: $secondary-color;
+}
+
+.navbar {
+  background-color: $primary-color-dark;
+  i {
+    color: white;
+  }
+  .navbar-brand {
+    color: white;
+  }
+}
+
+header nav img {
+  max-width: 64px;
+}
