@@ -1,11 +1,20 @@
+const webpack = require('webpack')
+const path = require('path')
+
 module.exports = {
   entry: [
+    'react-hot-loader/patch',
+    'webpack-dev-server/client',
+    'webpack/hot/only-dev-server',
     './client/index.js'
   ],
   output: {
-    path: './build',
+    path: path.join(__dirname, './build'),
     filename: 'app.bundle.js'
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
   module: {
     loaders: [
       {

@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "babel src -d lib"
+    "build": "babel src -d lib",
+    "serve-hot": "node start-hot-server.js",
+    "storybook": "start-storybook -p 9001 -c client/.storybook"
   },
   "repository": {
     "type": "git",
@@ -33,6 +35,7 @@
     "webpack": "^3.4.1"
   },
   "dependencies": {
+    "express": "^4.15.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
