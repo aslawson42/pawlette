@@ -1,6 +1,0 @@
-[submodule "client"]
-	path = client
-	url = git@github.com:aslawson42/pawlette-client.git
-[submodule "server"]
-	path = server
-	url = git@github.com:aslawson42/pawlette-server.git
