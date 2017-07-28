@@ -10,11 +10,22 @@ $night-primary-color-dark: #102027;
 $night-secondary-color: #607d8b;
 $night-secondary-color-light: #8eacbb;
 $night-secondary-color-dark: #34515e;
+$accent-green: #009688;
+$accent-orange: ;
+$accent-red: #CC284F;
+$night-accent-green: #80CBC4;
+$night-accent-orange: ;
+$night-accent-red: #C95D77;
 
 body {
   font-family: Roboto, Helvetica, san-serif;
   background-color: $secondary-color;
 }
+
+.material-icons .md-18 { font-size: 18px; }
+.material-icons .md-24 { font-size: 24px; }
+.material-icons .md-36 { font-size: 36px; }
+.material-icons .md-48 { font-size: 48px; }
 
 .navbar {
   background-color: $primary-color-dark;
@@ -38,5 +49,26 @@ header nav img {
   }
   .list-group .list-group-item:hover {
     background-color: $primary-color-light;
+  }
+  header {
+    background-color: $primary-color;
+    height: 172px;
+    .avatar {
+      font-size: 48px; }
+    .followers {
+      font-size: 12px;
+      .follower-number {
+        font-size: 14px;
+        font-weight: 500; }
+    }
+    .account {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      .dropdown {
+        margin-left: auto; }
+    }
   }
 }

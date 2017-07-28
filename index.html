@@ -16,7 +16,7 @@
   <div class="bmd-layout-container bmd-drawer-f-l">
     <header class="bmd-layout-header">
       <nav class="navbar navbar-fixed-top navbar-light bg-faded">
-        <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s1">
+        <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#main-drawer">
           <span class="sr-only">Toggle drawer</span>
           <i class="material-icons">menu</i>
         </button>
@@ -29,16 +29,35 @@
         </div>
       </nav>
     </header>
-    <div id="dw-s1" class="bmd-layout-drawer bg-faded">
+    <div id="main-drawer" class="bmd-layout-drawer bg-faded">
       <header>
-        <a class="navbar-brand">Username</a>
-      </header>
+      <i class="material-icons avatar">account_circle</i>
+      <br />
+      <div class="followers">
+        <span class="follower-number">10.9 K</span> Following <span class="follower-number">11.3 K</span> Followers
+      </div>
+      <div class="account">
+        <span><strong>Username</strong></span>
+        <div class="dropdown">
+          <button class="btn bmd-btn-icon dropdown-toggle" type="button" id="nav-account-menu" data-toggle="dropdown" aria-haspopup="true">
+            <i class="material-icons">arrow_drop_down</i>
+          </button>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="nav-account-menu">
+            <a class="dropdown-item"><i class="material-icons">account_circle</i>OtherAccount</a>
+            <a class="dropdown-item"><i class="material-icons">account_circle</i>AnotherAccount</a>
+            <a class="dropdown-item"><i class="material-icons">add</i>Add account...</a>
+          </div>
+        </div>
+      </div>
+    </header>
       <ul class="list-group">
-        <a class="list-group-item"><img src="img/Pawlette Logo - White.svg" role="presentation">Home</a>
+        <a class="list-group-item active"><img src="img/Pawlette Logo - White.svg" role="presentation">Home</a>
         <a class="list-group-item"><i class="material-icons" role="presentation">account_circle</i>Profile</a>
         <a class="list-group-item"><i class="material-icons" role="presentation">cloud_upload</i>Upload</a>
         <a class="list-group-item"><i class="material-icons" role="presentation">note_add</i>Posts</a>
-        <div><hr /></div>
+        <div>
+          <hr />
+        </div>
         <a class="list-group-item"><i class="material-icons" role="presentation">settings</i>Settings</a>
         <a class="list-group-item"><i class="material-icons" role="presentation">forum</i>Community</a>
         <a class="list-group-item"><i class="material-icons" role="presentation">help</i>Support</a>
