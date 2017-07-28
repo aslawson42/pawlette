@@ -6,30 +6,24 @@
   <title>Pawlette</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="node_modules/material-components-web/dist/material-components-web.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
   <link href="main.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
   <script src="https://unpkg.com/vue"></script>
 </head>
 
 <body>
-  <header class="mdc-toolbar mdc-toolbar--fixed">
-    <div class="mdc-toolbar__row">
-      <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-        <a href="#" class="material-icons mdc-toolbar__icon--menu">menu</a>
-        <img src="img/Pawlette Logo - Gray Filled.svg" />
-        <span class="mdc-toolbar__title">Home</span>
-      </section>
-      <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">
-        <a class="material-icons align-icons mdc-toolbar__icon" aria-label="Search" alt="Search">search</a>
-        <a class="material-icons align-icons mdc-toolbar__icon" aria-label="Notifications" alt="Notifications">notifications_none</a>
-        <a class="material-icons align-icons mdc-toolbar__icon" aria-label="Messages" alt="Messages">mail_outline</a>
-      </section>
+  <nav>
+    <div class="nav-wrapper">
+      <a class="brand-logo">
+        <i class="material-icons">menu</i>Pawlette</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#"><i class="material-icons">search</i></a></li>
+        <li><a href="#"><i class="material-icons">notifications</i></a></li>
+        <li><a href="#"><i class="material-icons">mail_outline</i></a></li>
+      </ul>
     </div>
-  </header>
-  <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
-  <script>
-    mdc.autoInit()
-  </script>
+  </nav>
 </body>
 
 </html>

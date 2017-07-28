@@ -1,9 +1,13 @@
-.mdc-toolbar {
+nav {
   background-color: #34515e;
 }
-.mdc-toolbar img {
-  max-width: 64px;
+nav .nav-wrapper .brand-logo i {
+  margin-left: 16px;
 }
-.mdc-toolbar section {
-  font-family: Roboto;
+nav .nav-wrapper a span {
+  font-size: 20px;
+}
+nav .nav-wrapper img {
+  max-width: 64px;
+  margin: auto;
 }
