@@ -41,45 +41,78 @@ body {
   position: fixed;
   top: 0;
   right: 0;
-  left: 0;
-}
+  left: 0; }
+  .nav .nav-left {
+    float: left!important;
+    margin-left: auto;
+    display: inline-block; }
+  .nav .nav-right {
+    float: right!important;
+    margin-left: auto;
+    display: inline-block; }
+    .nav div a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      vertical-align: middle;
+      padding: 0.5rem;
+      text-decoration: none;
+      font-size: 1rem; }
+        .nav div a:hover { background-color: var(--primary-color); }
+    .nav div .navbar-brand {
+      font-size: 1.25rem;
+      vertical-align: middle; }
+  .nav img {
+    display: inline-block;
+    max-width: 3rem;
+    vertical-align: middle; }
 
-.nav .nav-left {
-  float: left!important;
-  margin-left: auto;
-  display: inline-block;
-}
 
-.nav .nav-right {
-  float: right!important;
-  margin-left: auto;
-  display: inline-block;
-}
 
-.nav div a {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  vertical-align: middle;
-  padding: 0.5rem;
-  text-decoration: none;
-  font-size: 1rem;
-}
+  .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: var(--secondary-color-dark);
+        overflow-x: hidden;
+        transition: 0.2s;
+    }
+    .sidenav header {
+        padding: 3rem .5rem .5rem 1rem;
+        text-decoration: none;
+        font-size: 1rem;
+        background-color: var(--primary-color);
+        color: white;
+        height: 172px;
+    }
+    .sidenav header .avatar {
+      font-size: 4rem;
+    }
+    .sidenav header .followers {
+      font-size: 0.75rem; }
+      .sidenav header .followers .follower-number {
+        font-size: 1rem;
+        font-weight: 500; }
 
-.nav div a:hover {
-  background-color: var(--primary-color);
-}
+    .sidenav .list-group {
+      padding: 1rem;
+      display: block;
+    }
+    .sidenav .list-group .list-group-item {
+        padding: .5rem 2rem;
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+        display: block;
+    }
 
-.nav div .navbar-brand {
-  font-size: 1.25rem;
-  vertical-align: middle;
-}
-
-.nav img {
-  display: inline-block;
-  max-width: 3rem;
-  vertical-align: middle;
-}
+    .sidenav .list-group .list-group-item :first-child {
+      margin-right: 2rem;
+      max-width: 1.5rem;
+    }
 
 @media screen and (max-width: 320px) {
   .nav img {
