@@ -1,0 +1,67 @@
+:root {
+  --primary-color: #607d8b;
+  --primary-color-light: #8eacbb;
+  --primary-color-dark: #34515e;
+  --secondary-color: #b0bec5;
+  --secondary-color-light: #e2f1f8;
+  --secondary-color-dark: #808e95;
+  --night-primary-color: #37474f;
+  --night-primary-color-light: #62727b;
+  --night-primary-color-dark: #102027;
+  --night-secondary-color: #607d8b;
+  --night-secondary-color-light: #8eacbb;
+  --night-secondary-color-dark: #34515e;
+  --accent-green: #009688;
+  --accent-red: #CC284F;
+  --night-accent-green: #80CBC4;
+  --night-accent-red: #C95D77;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, Helvetica, san-serif;
+  background-color: var(--secondary-color);
+}
+
+body {
+  margin: 0;
+}
+
+.nav {
+  background-color: var(--primary-color-dark);
+  overflow: hidden;
+  display: block;
+}
+
+.nav .nav-left {
+  float: left!important;
+  margin-left: auto;
+  display: inline-block;
+}
+
+.nav .nav-right {
+  float: right!important;
+  margin-left: auto;
+  display: inline-block;
+}
+
+.nav div a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav div a:hover {
+  background-color: var(--primary-color);
+}
+
+.nav div .navbar-brand {
+  font-size: 1.5rem;
+}
