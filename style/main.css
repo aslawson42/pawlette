@@ -45,23 +45,25 @@ body {
   .nav .nav-left {
     float: left!important;
     margin-left: auto;
-    display: flex; }
+    display: inline-flex;
+    align-items: center; }
   .nav .nav-right {
     float: right!important;
     margin-left: auto;
-    display: flex; }
+    display: inline-flex;
+    align-items: center; }
     .nav div a {
-      display: inline-flex;
+      display: inline-block;
       color: white;
       text-align: center;
-      vertical-align: middle;
-      padding: 0.5rem 1rem;
+      align-items: center;
+      padding: 0.5rem;
       text-decoration: none;
       font-size: 1rem; }
         .nav div a:hover { background-color: var(--primary-color); }
     .nav div .navbar-brand {
-      font-size: 1.25rem;
-      vertical-align: middle; }
+      display: inline-flex;
+      font-size: 1.25rem; }
   .nav img {
     display: inline-flex;
     align-items: center;
@@ -172,7 +174,28 @@ body {
       color: black; }
 
 @media screen and (max-width: 320px) {
-  .nav img {
-    display: none;
-  }
+  .nav img {display: none;}
+}
+@media screen and (max-height: 700px) {
+    .sidenav header {height: 148px;}
+    .sidenav header .followers {
+      font-size: 12px;
+      padding-top: 0.5rem; }
+    .sidenav header .followers .follower-number {font-size: 14px;}
+    .sidenav header .account {
+      font-size: 12px;
+      padding-top: 0.5rem; }
+    .sidenav .list-group .list-group-item {
+      font-size: 12px;
+      padding: 0.5rem 2.5rem;}
+    .sidenav .btn-group {padding: .5rem;}
+    .sidenav .btn-group .btn {
+      font-size: 12px;
+      padding: 0.25rem 0.5rem;}
+    .sidenav .btn-group .btn-active {font-size: 12px;}
+}
+@media screen and (max-height: 480px) {
+    .sidenav .btn-group {padding: .25rem;}
+    .sidenav .list-group .list-group-item {
+      padding: 0.25rem 2.5rem;}
 }
