@@ -149,6 +149,27 @@ body {
               margin-right: 2rem;
               max-width: 1.5rem;
               transition: 0.2s; }
+    .sidenav .btn-group {
+      float: right;
+      position: relative;
+      display: flex;
+      padding: 1rem;
+      align-items: center; }
+    .sidenav .btn-group .btn {
+      color: white;
+      position: relative;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      cursor: pointer;
+      background-color: transparent; }
+    .sidenav .btn-group .btn-active {
+      background-color: var(--night-accent-green);
+      color: black; }
 
 @media screen and (max-width: 320px) {
   .nav img {

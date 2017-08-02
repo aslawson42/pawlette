@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto: 300,400,500,700">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="style.css" rel="stylesheet">
+  <script src="src/index.js" async></script>
 </head>
 
 <body>
@@ -60,21 +61,12 @@
       <a href="#" class="list-group-item"><i class="material-icons" role="presentation">arrow_back</i>Log Out</a>
     </div>
     <div class="btn-group">
-      <button type="button" id="sfw-mode" class="btn" data-toggle="button" aria-pressed="false" autocomplete="off">SFW</button>
-      <button type="button" id="night-mode" class="btn" data-toggle="button" aria-pressed="false" autocomplete="off">Night</button>
+      <a class="btn" onclick="toggleButton(this)">SFW</a>
+      <a class="btn" onclick="toggleButton(this)">Night</a>
     </div>
   </div>
   <main>
   </main>
-  <script>
-    function openNav() {
-      document.getElementById("menuSideNav").style.width = "240px";
-    }
-
-    function closeNav() {
-      document.getElementById("menuSideNav").style.width = "0";
-    }
-  </script>
 </body>
 
 </html>
