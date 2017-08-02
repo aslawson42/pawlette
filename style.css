@@ -45,17 +45,17 @@ body {
   .nav .nav-left {
     float: left!important;
     margin-left: auto;
-    display: inline-block; }
+    display: flex; }
   .nav .nav-right {
     float: right!important;
     margin-left: auto;
-    display: inline-block; }
+    display: flex; }
     .nav div a {
-      display: inline-block;
+      display: inline-flex;
       color: white;
       text-align: center;
       vertical-align: middle;
-      padding: 0.5rem;
+      padding: 0.5rem 1rem;
       text-decoration: none;
       font-size: 1rem; }
         .nav div a:hover { background-color: var(--primary-color); }
@@ -63,7 +63,8 @@ body {
       font-size: 1.25rem;
       vertical-align: middle; }
   .nav img {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     max-width: 3rem;
     vertical-align: middle; }
 
@@ -81,19 +82,33 @@ body {
         transition: 0.2s;
     }
     .sidenav header {
-        padding: 2rem .5rem .5rem 1rem;
+        padding: 1rem .5rem .5rem 1rem;
         text-decoration: none;
         font-size: 1rem;
         background-color: var(--primary-color);
         color: white;
         height: 172px;
+        transition: 0.2s;
     }
+    .sidenav header .close {
+      font-size: 2rem;
+      float: right;
+      text-decoration: none;
+      color: white;
+      transition: 0.2s;
+    }
+    .sidenav header .close:hover {
+      background-color: var(--primary-color-light);
+      transition: 0.2s; }
     .sidenav header .avatar {
       font-size: 4rem;
-    }
+      text-decoration: none;
+      color: white;
+      transition: 0.2s; }
     .sidenav header .followers {
       font-size: 12px;
-      padding-top: 1rem; }
+      padding-top: 1rem;
+      transition: 0.2s; }
       .sidenav header .followers .follower-number {
         font-size: 14px;
         font-weight: 500; }
@@ -103,26 +118,37 @@ body {
       padding-top: 1rem;
       position: relative;
       align-items: center;
-      width: 100%; }
+      width: 100%;
+      transition: 0.2s; }
+    .sidenav header .account a {
+      text-decoration: none;
+      color: white; }
 
     .sidenav .list-group {
-      padding: 1rem;
-      display: block;
-    }
-    .sidenav .list-group .list-group-item {
-        padding: 1rem 2rem;
-        text-decoration: none;
-        font-size: 0.75rem;
-        font-weight: 500;
-        color: white;
-        display: flex;
-        align-items: center;
-    }
-
-    .sidenav .list-group .list-group-item :first-child {
-      margin-right: 2rem;
-      max-width: 1.5rem;
-    }
+      padding: 0.5rem 0;
+      display: flex;
+      flex-direction: column;
+      transition: 0.2s; }
+      .sidenav .list-group .list-group-item {
+          padding: 1rem 2.5rem;
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 500;
+          color: white;
+          display: flex;
+          align-items: center;
+          flex-flow: row wrap;
+          position: relative;
+          width: 100%;
+          transition: 0.2s; }
+            .sidenav .list-group .active {
+              background-color: var(--primary-color-light);}
+            .sidenav .list-group .list-group-item:hover {
+              background-color: var(--primary-color-light); }
+            .sidenav .list-group .list-group-item :first-child {
+              margin-right: 2rem;
+              max-width: 1.5rem;
+              transition: 0.2s; }
 
 @media screen and (max-width: 320px) {
   .nav img {
