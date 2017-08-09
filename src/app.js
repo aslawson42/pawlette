@@ -20,7 +20,7 @@ Vue.component ('pawlette-nav', {
 // register pawlette-sidenav component
 Vue.component ('pawlette-sidenav', {
   template: `
-  <div class="sidenav" id="menuSideNav">
+  <div class="sidenav" id="menu-sidenav">
     <header>
       <a href="#"><i class="material-icons close" onclick="closeNav()">close</i></a>
       <a href="#"><i class="material-icons avatar">account_circle</i></a>
@@ -30,6 +30,16 @@ Vue.component ('pawlette-sidenav', {
       </div>
       <div class="account">
         <a href="#"><span><strong>Username</strong></span></a>
+        <div class="dropdown">
+          <button onclick="dropDown()" class="dropbtn">
+            <i class="material-icons">arrow_drop_down</i>
+          </button>
+          <div id="sidenav-dropdown" class="dropdown-content">
+            <a href="#"><i class="material-icons">account_circle</i>OtherAccount</a>
+            <a href="#"><i class="material-icons">account_circle</i>AnotherAccount</a>
+            <a href="#"><i class="material-icons">add</i>Add Account...</a>
+          </div>
+        </div>
       </div>
     </header>
     <div class="list-group">
@@ -60,13 +70,18 @@ var vm = new Vue({
 
 // opening and closing the sidenav
 function openNav() {
-  document.getElementById("menuSideNav").style.width = "240px";
+  document.getElementById("menu-sidenav").style.width = "240px";
 }
 function closeNav() {
-  document.getElementById("menuSideNav").style.width = "0";
+  document.getElementById("menu-sidenav").style.width = "0";
 }
 
 //toggling the SFW and Night buttons on sidenav
 function toggleButton(x) {
   x.classList.toggle("btn-active");
+}
+
+//toggles the account dropdown
+function dropDown() {
+  document.getElementById("sidenav-dropdown").classList.toggle("show");
 }

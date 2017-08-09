@@ -24,7 +24,7 @@
       <a href="#"><i class="material-icons">mail_outline</i></a>
     </div>
   </div>
-  <div class="sidenav" id="menuSideNav">
+  <div class="sidenav" id="menu-sidenav">
     <header>
       <a href="#"><i class="material-icons close" onclick="closeNav()">close</i></a>
       <a href="#"><i class="material-icons avatar">account_circle</i></a>
@@ -34,16 +34,16 @@
       </div>
       <div class="account">
         <a href="#"><span><strong>Username</strong></span></a>
-        <!-- <div class="dropdown">
-            <button class="btn bmd-btn-icon dropdown-toggle" type="button" id="nav-account-menu" data-toggle="dropdown" aria-haspopup="true">
+        <div class="dropdown">
+          <button onclick="dropDown()" class="dropbtn">
             <i class="material-icons">arrow_drop_down</i>
           </button>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="nav-account-menu">
-              <a class="dropdown-item"><i class="material-icons">account_circle</i>OtherAccount</a>
-              <a class="dropdown-item"><i class="material-icons">account_circle</i>AnotherAccount</a>
-              <a class="dropdown-item"><i class="material-icons">add</i>Add account...</a>
-            </div>
-          </div> -->
+          <div id="sidenav-dropdown" class="dropdown-content">
+            <a href="#"><i class="material-icons">account_circle</i>OtherAccount</a>
+            <a href="#"><i class="material-icons">account_circle</i>AnotherAccount</a>
+            <a href="#"><i class="material-icons">add</i>Add Account...</a>
+          </div>
+        </div>
       </div>
     </header>
     <div class="list-group">
