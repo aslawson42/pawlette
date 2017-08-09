@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+'use strict';
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Pawlette</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto: 300,400,500,700">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link href="style/main.css" rel="stylesheet">
-</head>
-
-<body>
+// register paewlette-nav component
+Vue.component ('pawlette-nav', {
+  template: `
   <div class="nav">
     <div class="nav-left">
       <a href="#" onclick="openNav()"><i class="material-icons">menu</i></a>
@@ -23,7 +14,12 @@
       <a href="#"><i class="material-icons">notifications_none</i></a>
       <a href="#"><i class="material-icons">mail_outline</i></a>
     </div>
-  </div>
+  </div>`
+});
+
+// register pawlette-sidenav component
+Vue.component ('pawlette-sidenav', {
+  template: `
   <div class="sidenav" id="menuSideNav">
     <header>
       <a href="#"><i class="material-icons close" onclick="closeNav()">close</i></a>
@@ -34,16 +30,6 @@
       </div>
       <div class="account">
         <a href="#"><span><strong>Username</strong></span></a>
-        <!-- <div class="dropdown">
-            <button class="btn bmd-btn-icon dropdown-toggle" type="button" id="nav-account-menu" data-toggle="dropdown" aria-haspopup="true">
-            <i class="material-icons">arrow_drop_down</i>
-          </button>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="nav-account-menu">
-              <a class="dropdown-item"><i class="material-icons">account_circle</i>OtherAccount</a>
-              <a class="dropdown-item"><i class="material-icons">account_circle</i>AnotherAccount</a>
-              <a class="dropdown-item"><i class="material-icons">add</i>Add account...</a>
-            </div>
-          </div> -->
       </div>
     </header>
     <div class="list-group">
@@ -64,9 +50,23 @@
       <a class="btn" onclick="toggleButton(this)">Night</a>
     </div>
   </div>
-  <main>
-  </main>
-  <script src="src/index.js" async></script>
-</body>
+  `
+});
 
-</html>
+// root instance
+var vm = new Vue({
+  el: '#app'
+});
+
+// opening and closing the sidenav
+function openNav() {
+  document.getElementById("menuSideNav").style.width = "240px";
+}
+function closeNav() {
+  document.getElementById("menuSideNav").style.width = "0";
+}
+
+//toggling the SFW and Night buttons on sidenav
+function toggleButton(x) {
+  x.classList.toggle("btn-active");
+}
