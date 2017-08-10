@@ -1,0 +1,11 @@
+/* TYPOGRAPHY */
+
+:root {
+  --default-font: Roboto, Helvetica, san-serif;
+  --default-font-weight: 400;
+  --default-font-size: 1rem;
+  --small-font-size: 0.75rem;
+  --large-font-size: 1.25rem;
+  --double-font-size: 2rem;
+  --quad-font-size: 4rem;
+}
