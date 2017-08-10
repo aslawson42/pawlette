@@ -1,7 +1,6 @@
-# pawlette
-A prototype for an art gallery website.
-This website uses Vue.js and CSS custom properties, but is otherwise vanilla HTML, CSS, and ES6.
+# Pawlette
+A prototype for an art gallery website. This website uses Vue.js and CSS custom properties, but is otherwise vanilla HTML, CSS, and ES6.
 
-## hot reloading server
+## Hot Reloading Server
 
 Run `live-server` in the CLI, and it will automatically open the site in http://localhost:8080/.
