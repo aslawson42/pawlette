@@ -1,5 +1,6 @@
 # pawlette
 A prototype for an art gallery website.
+This website uses Vue.js and CSS custom properties, but is otherwise vanilla HTML, CSS, and ES6.
 
 ## hot reloading server
 
