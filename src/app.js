@@ -23,7 +23,7 @@ Vue.component ('pawlette-sidenav', {
   template: `
   <div class="sidenav" id="menu-sidenav">
     <header>
-      <a href="#"><i class="material-icons close" onclick="closeNav()">close</i></a>
+      <a href="#"><i class="material-icons closebtn" onclick="closeNav()">close</i></a>
       <a href="#"><i class="material-icons avatar">account_circle</i></a>
       <br />
       <div class="followers">

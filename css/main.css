@@ -11,5 +11,5 @@ body {
   font-family: var(--default-font);
   font-weight: var(--default-font-weight);
   font-size: var(--default-font-size);
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color-light);
 }

@@ -83,14 +83,14 @@
   height: 148px;
 }
 
-.sidenav header .close {
+.sidenav header .closebtn {
   font-size: var(--double-font-size);
   text-decoration: none;
   color: white;
   float: right;
 }
 
-.sidenav header .close:hover {
+.sidenav header .closebtn:hover {
   background-color: var(--primary-color-light);
 }
 
@@ -214,14 +214,14 @@
   display: none;
   position: absolute;
   right: 0;
-  background-color: white;
+  background-color: var(--secondary-color-light);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black !important;
+  color: var(--primary-color-dark) !important;
   padding: 12px 16px;
   text-decoration: none;
   display: flex;
@@ -229,7 +229,8 @@
 }
 
 .dropdown-content a:hover {
-  background-color: var(--secondary-color-light)
+  background-color: var(--primary-color-light);
+  color: white !important;
 }
 
 .show {
