@@ -8,7 +8,7 @@ Vue.component ('pawlette-nav', {
       <a href="#" onclick="openNav()"><i class="material-icons">menu</i></a>
       <a href="#" class="navbar-brand">Pawlette</a>
     </div>
-    <img src="img/Pawlette Logo - Gray Filled.svg" />
+    <img src="img/Pawlette Logo - White.svg" />
     <div class="nav-right">
       <a href="#"><i class="material-icons">search</i></a>
       <a href="#"><i class="material-icons">notifications_none</i></a>
@@ -33,7 +33,7 @@ Vue.component ('pawlette-sidenav', {
         <a href="#"><span><strong>Username</strong></span></a>
         <div class="dropdown">
           <button onclick="dropDown()" class="dropbtn">
-            <i class="material-icons">arrow_drop_down</i>
+            <i class="material-icons" id="arrow-drop-down">arrow_drop_down</i>
           </button>
           <div id="sidenav-dropdown" class="dropdown-content">
             <a href="#"><i class="material-icons">account_circle</i>OtherAccount</a>
@@ -44,13 +44,11 @@ Vue.component ('pawlette-sidenav', {
       </div>
     </header>
     <div class="list-group">
-      <a href="#" class="list-group-item active"><img src="img/Pawlette Logo - White.svg" role="presentation"><span>Home</span></a>
+      <a href="#" class="list-group-item"><i class="material-icons" role="presentation">home</i><span>Home</span></a>
       <a href="#" class="list-group-item"><i class="material-icons" role="presentation">account_circle</i>Profile</a>
       <a href="#" class="list-group-item"><i class="material-icons" role="presentation">cloud_upload</i>Upload</a>
       <a href="#" class="list-group-item"><i class="material-icons" role="presentation">note_add</i>Posts</a>
-      <div>
-        <hr />
-      </div>
+      <hr />
       <a href="#" class="list-group-item"><i class="material-icons" role="presentation">settings</i>Settings</a>
       <a href="#" class="list-group-item"><i class="material-icons" role="presentation">forum</i>Community</a>
       <a href="#" class="list-group-item"><i class="material-icons" role="presentation">help</i>Support</a>

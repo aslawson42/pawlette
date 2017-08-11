@@ -66,9 +66,10 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: var(--secondary-color-dark);
+  background-color: white;
   overflow-x: hidden;
   transition: 0.25s linear;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 
 .sidenav header {
@@ -126,7 +127,7 @@
 
 .sidenav .list-group {
   margin-top: 148px;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   display: block;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -138,7 +139,7 @@
   text-decoration: none;
   font-size: var(--default-font-size);
   font-weight: 500;
-  color: white;
+  color: var(--primary-color-dark);
   display: flex;
   align-items: center;
   flex-flow: row wrap;
@@ -148,10 +149,12 @@
 
 .sidenav .list-group .active {
   background-color: var(--primary-color-light);
+  color: white;
 }
 
 .sidenav .list-group .list-group-item:hover {
   background-color: var(--primary-color-light);
+  color: white;
 }
 
 .sidenav .list-group .list-group-item :first-child {
@@ -169,7 +172,7 @@
 }
 
 .sidenav .btn-group .btn {
-  color: white;
+  color: var(--primary-color-dark);
   position: relative;
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -183,15 +186,15 @@
 }
 
 .sidenav .btn-group .btn-active {
-  background-color: var(--night-accent-green);
-  color: black;
+  background-color: var(--accent-green);
+  color: white;
 }
 
 
 /* SIDENAV DROPDOWN */
 
 .dropbtn {
-  background-color: var(--primary-color-dark);
+  background-color: var(--primary-color);
   color: white;
   padding: 0px;
   border-radius: 25%;
@@ -214,7 +217,7 @@
   display: none;
   position: absolute;
   right: 0;
-  background-color: var(--secondary-color-light);
+  background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -229,8 +232,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: var(--primary-color-light);
-  color: white !important;
+  background-color: var(--secondary-color-light);
 }
 
 .show {
