@@ -34,7 +34,7 @@
   color: white;
   text-align: center;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   font-size: var(--default-font-size);
 }
@@ -68,43 +68,41 @@
   left: 0;
   background-color: var(--secondary-color-dark);
   overflow-x: hidden;
-  transition: 0.2s;
+  transition: 0.25s linear;
 }
 
 .sidenav header {
-  padding: 1rem .5rem .5rem 1rem;
+  padding: .5rem;
+  left: 0;
+  width: 225px;
   text-decoration: none;
   font-size: var(--default-font-size);
   background-color: var(--primary-color);
   color: white;
+  position: absolute;
   height: 148px;
-  transition: 0.2s;
 }
 
 .sidenav header .close {
   font-size: var(--double-font-size);
-  float: right;
   text-decoration: none;
   color: white;
-  transition: 0.2s;
+  float: right;
 }
 
 .sidenav header .close:hover {
   background-color: var(--primary-color-light);
-  transition: 0.2s;
 }
 
 .sidenav header .avatar {
   font-size: var(--quad-font-size);
   text-decoration: none;
   color: white;
-  transition: 0.2s;
 }
 
 .sidenav header .followers {
   font-size: var(--small-font-size);
   padding-top: 1rem;
-  transition: 0.2s;
 }
 
 .sidenav header .followers .follower-number {
@@ -113,14 +111,12 @@
 }
 
 .sidenav header .account {
-  display: inline-flex;
   font-size: var(--default-font-size);
-  padding-top: 1rem;
-  position: relative;
+  padding-top: 0.5rem;
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  transition: 0.2s;
 }
 
 .sidenav header .account a {
@@ -129,10 +125,12 @@
 }
 
 .sidenav .list-group {
+  margin-top: 148px;
   padding: 0.5rem 0;
-  display: flex;
+  display: block;
+  flex-wrap: nowrap;
   flex-direction: column;
-  transition: 0.2s;
+  position: absolute;
 }
 
 .sidenav .list-group .list-group-item {
@@ -146,7 +144,6 @@
   flex-flow: row wrap;
   position: relative;
   width: 100%;
-  transition: 0.2s;
 }
 
 .sidenav .list-group .active {
@@ -160,12 +157,12 @@
 .sidenav .list-group .list-group-item :first-child {
   margin-right: 2rem;
   max-width: 1.5rem;
-  transition: 0.2s;
 }
 
 .sidenav .btn-group {
-  float: right;
-  position: relative;
+  margin-top: 650px;
+  margin-left: 80px;
+  position: absolute;
   display: flex;
   padding: 1rem;
   align-items: center;

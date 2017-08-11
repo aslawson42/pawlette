@@ -1,5 +1,11 @@
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 500px) {
+  .nav div a {
+    padding: 0.5rem;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .nav img {
     display: none;
@@ -18,29 +24,34 @@
     font-size: var(--default-font-size);
   }
   .sidenav header .account {
-    padding-top: 0.5rem;
+    padding-top: 0.25rem;
+  }
+  .sidenav .list-group {
+    margin-top: 130px;
   }
   .sidenav .list-group .list-group-item {
-    font-size: var(--small-font-size);
     padding: 0.5rem 2.5rem;
   }
   .sidenav .btn-group {
     padding: .5rem;
+    margin-top: 500px;
+    margin-left: 90px;
   }
   .sidenav .btn-group .btn {
-    font-size: var(--small-font-size);
-    padding: 0.25rem 0.5rem;
+    padding: 0.25rem 1rem;
   }
   .sidenav .btn-group .btn-active {
+  }
+  .dropdown-content {
     font-size: var(--small-font-size);
   }
 }
 
 @media screen and (max-height: 480px) {
-  .sidenav .btn-group {
-    padding: .25rem;
-  }
   .sidenav .list-group .list-group-item {
     padding: 0.25rem 2.5rem;
+  }
+  .sidenav .btn-group {
+    margin-top: 420px;
   }
 }

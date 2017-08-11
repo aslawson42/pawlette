@@ -13,6 +13,7 @@ Vue.component ('pawlette-nav', {
       <a href="#"><i class="material-icons">search</i></a>
       <a href="#"><i class="material-icons">notifications_none</i></a>
       <a href="#"><i class="material-icons">mail_outline</i></a>
+      <a href="#"><i class="material-icons">account_circle</i></a>
     </div>
   </div>`
 });
