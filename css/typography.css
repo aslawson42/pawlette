@@ -3,6 +3,7 @@
 :root {
   --default-font: Roboto, Helvetica, san-serif;
   --default-font-weight: 400;
+  --heavy-font-weight: 500;
   --default-font-size: 1rem;
   --small-font-size: 0.75rem;
   --large-font-size: 1.25rem;

@@ -2,13 +2,16 @@
 
 @media screen and (max-width: 500px) {
   .nav div a {
-    padding: 0.5rem;
+    padding: 8px;
   }
-}
-
-@media screen and (max-width: 320px) {
   .nav img {
     display: none;
+  }
+  .tab {
+    margin-left: 16px;
+  }
+  .tabcontent {
+    margin-left: 12px;
   }
 }
 

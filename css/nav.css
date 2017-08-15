@@ -8,7 +8,7 @@
   box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
   overflow: hidden;
   display: block;
-  padding: .25rem .5rem;
+  padding: 8px 16px;
   position: fixed;
   top: 0;
   right: 0;
@@ -34,7 +34,7 @@
   color: white;
   text-align: center;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   text-decoration: none;
   font-size: var(--default-font-size);
 }
@@ -51,7 +51,7 @@
 .nav img {
   display: inline-flex;
   align-items: center;
-  max-width: 3rem;
+  max-width: 48px;
   vertical-align: middle;
 }
 
@@ -147,6 +147,10 @@
   width: 100%;
 }
 
+.sidenav .list-group hr {
+  width: 240px;
+}
+
 .sidenav .list-group .active {
   background-color: var(--primary-color-light);
   color: white;
@@ -237,4 +241,47 @@
 
 .show {
   display: block;
+}
+
+
+/* TABS */
+
+.tab {
+    overflow: hidden;
+    border: none;
+    background-color: white;
+    margin-top: 64px;
+    margin-left: 76px;
+    height: 48px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px;
+    color: var(--secondary-color);
+    font-size: var(--default-font-size);
+    font-weight: var(--heavy-font-weight);
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: var(--primary-color-dark);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    border-bottom: solid var(--primary-color) 2px;
+    color: var(--primary-color-dark);
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 8px 16px;
+    margin-left: 72px;
 }

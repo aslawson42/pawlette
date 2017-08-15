@@ -16,6 +16,18 @@
     <pawlette-nav></pawlette-nav>
     <pawlette-sidenav></pawlette-sidenav>
   </div>
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event, 'tab-following')" id="defaultOpen"><span>FOLLOWING</span></button>
+      <button class="tablinks" onclick="openTab(event, 'tab-all')"><span>ALL</span></button>
+    </div>
+
+    <div id="tab-following" class="tabcontent">
+      <p>Images.</p>
+    </div>
+
+    <div id="tab-all" class="tabcontent">
+      <p>More images.</p>
+    </div>
   <script src="https://unpkg.com/vue"></script>
   <script src="/src/app.js"></script>
 </body>
