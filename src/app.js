@@ -5,15 +5,15 @@ Vue.component ('pawlette-nav', {
   template: `
   <div class="nav">
     <div class="nav-left">
-      <a href="#" onclick="openNav()"><i class="material-icons">menu</i></a>
+      <a onclick="openNav()"><i class="material-icons">menu</i></a>
       <a href="/" class="navbar-brand">Pawlette</a>
     </div>
-    <img src="img/Pawlette Logo - White.svg" />
+    <img src="/img/Pawlette Logo - White.svg" />
     <div class="nav-right">
-      <a href="#"><i class="material-icons">search</i></a>
-      <a href="#"><i class="material-icons">notifications_none</i></a>
-      <a href="#"><i class="material-icons">mail_outline</i></a>
-      <a href="#"><i class="material-icons">account_circle</i></a>
+      <a href="/search.html"><i class="material-icons">search</i></a>
+      <a href="/notifications.html"><i class="material-icons">notifications_none</i></a>
+      <a href="/chat/messages.html"><i class="material-icons">mail_outline</i></a>
+      <a href="/user/profile.html"><i class="material-icons">account_circle</i></a>
     </div>
   </div>`
 });
@@ -23,33 +23,33 @@ Vue.component ('pawlette-sidenav', {
   template: `
   <div class="sidenav" id="menu-sidenav">
     <header>
-      <a href="#"><i class="material-icons closebtn" onclick="closeNav()">close</i></a>
-      <a href="#"><i class="material-icons avatar">account_circle</i></a>
+      <a><i class="material-icons closebtn" onclick="closeNav()">close</i></a>
+      <a href="/user/profile.html"><i class="material-icons avatar">account_circle</i></a>
       <br />
       <div class="followers">
         <span class="follower-number">10.9 K</span> Following <span class="follower-number">11.3 K</span> Followers
       </div>
       <div class="account">
-        <a href="#"><span><strong>Username</strong></span></a>
+        <a href="/user/profile.html"><span><strong>Username</strong></span></a>
         <div class="dropdown">
           <button onclick="dropDown()" class="dropbtn">
             <i class="material-icons" id="arrow-drop-down">arrow_drop_down</i>
           </button>
           <div id="sidenav-dropdown" class="dropdown-content">
-            <a href="#"><i class="material-icons">account_circle</i>OtherAccount</a>
-            <a href="#"><i class="material-icons">account_circle</i>AnotherAccount</a>
-            <a href="#"><i class="material-icons">add</i>Add Account...</a>
+            <a><i class="material-icons">account_circle</i>OtherAccount</a>
+            <a><i class="material-icons">account_circle</i>AnotherAccount</a>
+            <a><i class="material-icons">add</i>Add Account...</a>
           </div>
         </div>
       </div>
     </header>
     <div class="list-group">
-      <a href="#" class="list-group-item"><i class="material-icons" role="presentation">home</i><span>Home</span></a>
-      <a href="#" class="list-group-item"><i class="material-icons" role="presentation">account_circle</i>Profile</a>
+      <a href="/" class="list-group-item"><i class="material-icons" role="presentation">home</i><span>Home</span></a>
+      <a href="/user/profile.html" class="list-group-item"><i class="material-icons" role="presentation">account_circle</i>Profile</a>
       <a href="#" class="list-group-item"><i class="material-icons" role="presentation">cloud_upload</i>Upload</a>
       <a href="#" class="list-group-item"><i class="material-icons" role="presentation">note_add</i>Posts</a>
       <hr />
-      <a href="#" class="list-group-item"><i class="material-icons" role="presentation">settings</i>Settings</a>
+      <a href="/settings.html" class="list-group-item"><i class="material-icons" role="presentation">settings</i>Settings</a>
       <a href="#" class="list-group-item"><i class="material-icons" role="presentation">forum</i>Community</a>
       <a href="#" class="list-group-item"><i class="material-icons" role="presentation">help</i>Support</a>
       <a href="#" class="list-group-item"><i class="material-icons" role="presentation">arrow_back</i>Log Out</a>
