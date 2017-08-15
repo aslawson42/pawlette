@@ -252,7 +252,6 @@
     background-color: white;
     margin-top: 64px;
     margin-left: 76px;
-    height: 48px;
 }
 
 /* Style the buttons inside the tab */
@@ -262,7 +261,7 @@
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 12px;
+    padding: 16px 12px;
     color: var(--secondary-color);
     font-size: var(--default-font-size);
     font-weight: var(--heavy-font-weight);
@@ -284,4 +283,5 @@
     display: none;
     padding: 8px 16px;
     margin-left: 72px;
+    color: var(--primary-color-dark);
 }

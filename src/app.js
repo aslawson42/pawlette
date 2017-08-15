@@ -6,7 +6,7 @@ Vue.component ('pawlette-nav', {
   <div class="nav">
     <div class="nav-left">
       <a href="#" onclick="openNav()"><i class="material-icons">menu</i></a>
-      <a href="#" class="navbar-brand">Pawlette</a>
+      <a href="/" class="navbar-brand">Pawlette</a>
     </div>
     <img src="img/Pawlette Logo - White.svg" />
     <div class="nav-right">
