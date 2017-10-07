@@ -1,6 +1,6 @@
 'use strict';
 
-// register paewlette-nav component
+// register pawlette-nav component
 Vue.component ('pawlette-nav', {
   template: `
   <div class="nav">
